@@ -15,7 +15,6 @@
     
     NSString *strFeeds;
     NSString *strFacebookSocial;
-    
 }
 
 @property (retain,nonatomic) NSString *strId;

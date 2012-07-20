@@ -39,8 +39,7 @@ static NSString* kAppId =@"342624499147202";
     // Override point for customization after application launch.
  //   self.viewController = [[[CelebrityViewController alloc] initWithNibName:@"CelebrityViewController" bundle:nil] autorelease];
  //   self.window.rootViewController = self.viewController;
-    
-    
+
     mCheckinTabBarController.delegate=self;
     [self.window setRootViewController:mCheckinTabBarController];
     [window addSubview:mCheckinTabBarController.view];  

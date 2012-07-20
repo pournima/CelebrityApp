@@ -36,7 +36,6 @@
     auth_key=[standardUserDefaults objectForKey:@"FBAuthToken"];
     twitterAuthKey=[standardUserDefaults objectForKey:@"TWAUTHKEY"];
 
-    
     //[self doNetworkOperations];
     
      [self setTableView];
@@ -109,10 +108,10 @@
             [alert show];
             [alert release];
 
-//        SocialSettingViewController *socialSettingViewController=[[SocialSettingViewController alloc]initWithNibName:@"SocialSettingViewController" bundle:nil];
-//
-//        [self.navigationController pushViewController:socialSettingViewController animated:YES];
-//        [socialSettingViewController release]; 
+            //        SocialSettingViewController *socialSettingViewController=[[SocialSettingViewController alloc]initWithNibName:@"SocialSettingViewController" bundle:nil];
+            //
+            //        [self.navigationController pushViewController:socialSettingViewController animated:YES];
+            //        [socialSettingViewController release]; 
     
             //Switch to tab
             self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:3];    

@@ -101,7 +101,7 @@
     NSLog(@"Facebook Response: %@",responseJSONString);
     facebookImageArray=[DataResult parseFacebookImage:responseJSONString];
     
-    NSLog(@"RESPONSE -- %@",facebookImageArray);
+    NSLog(@"Parse Data -- %@",facebookImageArray);
     
     if([facebookImageArray count]==0){
         
@@ -122,7 +122,8 @@
     UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Connectivity Error" message:@"Check  your connection" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
     [alert release];
-    NSLog(@"Error in WebCall");
+    NSLog(@"Error in Web Service Call");
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:0];  
 }
 
 

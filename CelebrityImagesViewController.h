@@ -20,6 +20,7 @@
     IBOutlet UITableViewCell *tableCell; 
     IBOutlet UIImageView *imageView;
     CommonLoadingView *commonLoadingView;
+    
 }
 
 @property (retain,nonatomic) IBOutlet UIImageView *imageView;

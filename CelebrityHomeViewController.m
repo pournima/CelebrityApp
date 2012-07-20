@@ -65,9 +65,7 @@
     {
          [self presentModalViewController:celebrityViewController animated:NO];
     }
-
-//    [self presentModalViewController:celebrityViewController animated:NO];
-    
+  
    
     [super viewWillAppear:YES];
 

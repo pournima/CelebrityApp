@@ -44,7 +44,7 @@
     NSString *isTWKeyPresent;
     
 }
-- (void)doNetworkOperations;
+//- (void)doNetworkOperations;
 //- (ASIHTTPRequest *)getFacebookData;
 //- (ASIHTTPRequest *)getTwitterData;
 -(void)getTwitterData;

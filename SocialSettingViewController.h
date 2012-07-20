@@ -17,7 +17,6 @@
     NSString *strFacebook;
     NSString *strTwitter;
     
-    
     NSString *isFBKeyPresent;
     NSString *isTWKeyPresent;
     

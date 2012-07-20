@@ -113,15 +113,14 @@
 
 -(void)clearCredentials{
 
-    //
     //else{
     //    CelebrityViewController *celebrityViewController =[[CelebrityViewController alloc]initWithNibName:@"CelebrityViewController" bundle:nil];
     //    [self presentModalViewController:celebrityViewController animated:NO];
     //    [celebrityViewController release];
     //    
     //}
-
     
+            //Facebook
             //[appStatus saveShareStatus:@"access_token_FB" withArg2:@""];
             [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"access_token_FB"];
             [[NSUserDefaults standardUserDefaults] synchronize];
@@ -129,6 +128,7 @@
             [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"isActiveFB"];
             [[NSUserDefaults standardUserDefaults] synchronize];
             
+            //twitter
             // [appStatus saveShareStatus:@"TW_API_KEY" withArg2:@""];
             [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"TW_API_KEY"];
             [[NSUserDefaults standardUserDefaults] synchronize];

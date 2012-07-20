@@ -240,10 +240,8 @@
 
 #pragma mark SA_OAuthTwitterControllerDelegate
 - (void) OAuthTwitterController: (SA_OAuthTwitterController *) controller authenticatedWithUsername: (NSString *) username {
-	//NSLog(@"Authenicated for %@", username);
-    //  [appStatus saveShareStatus:@"tw_on" withArg2:@"true"];
+
     [[NSUserDefaults standardUserDefaults] setValue:@"true" forKey:@"tw_on"];
-    //  [appStatus saveShareStatus:@"isActiveTW" withArg2:@"YES"];
     [[NSUserDefaults standardUserDefaults] setValue:@"YES" forKey:@"isActiveTW"];
     // NSString *accessToken=[appStatus getShareStatus:@"TW_API_KEY"];
   /*  NSString *accessToken=[[NSUserDefaults standardUserDefaults] valueForKey:@"TW_API_KEY"];

@@ -13,9 +13,7 @@
     
    
     CelebrityViewController *celebrityViewController;
-    
     NSUserDefaults *standardUserDefaults;
-    
     IBOutlet UIImageView *imageView;
     
 }

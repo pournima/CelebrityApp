@@ -39,7 +39,6 @@
 
 }
 
-
 @property (retain, nonatomic) IBOutlet UIButton *btnFaceBook;
 @property (retain, nonatomic) IBOutlet UIButton *btnTwitter;
 

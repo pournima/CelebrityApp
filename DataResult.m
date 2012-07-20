@@ -21,16 +21,13 @@
 
 + (NSMutableArray *) parseFacebookImage:(NSString *) strImageResponse
 {
-
     //NSLog(@"response %@",strImageResponse);
     NSMutableArray *facebookValue=[[NSMutableArray alloc]init];
     
     NSArray *facebookImageData=[strImageResponse JSONValue];
-    
-    //NSLog(@"response array %@",facebookImageData);
+   
     NSMutableArray *data=[facebookImageData valueForKey:@"data"];
-    //NSLog(@"data -- %@",data);
-    
+        
     for (int i=1; i<[data count]; i++) 
     {
         DataResult *imageResult=[[DataResult alloc]init];
@@ -55,11 +52,9 @@
     NSMutableArray *facebookValue=[[NSMutableArray alloc]init];
     
     NSArray *facebookFeedsData=[strFeedsResponse JSONValue];
-    
-    //NSLog(@"response array %@",facebookImageData);
+   
     NSMutableArray *data=[facebookFeedsData valueForKey:@"data"];
-    NSLog(@"data -- %@",data);
-    
+     
     for (int i=1; i<[data count]; i++) 
     {
         DataResult *feedsResult=[[DataResult alloc]init];
@@ -80,15 +75,11 @@
 
 + (NSMutableArray *) parseTwitterTweets:(NSString *) strTweetsResponse
 {
-    
     NSMutableArray *twitterValue=[[NSMutableArray alloc]init];
     
     NSArray *twitterTweetsData=[strTweetsResponse JSONValue];
     
-    NSLog(@"response array %@",twitterTweetsData);
-    
     NSMutableArray *data=[twitterTweetsData valueForKey:@"results"];
-    NSLog(@"Twitter data -- %@",data);
     
     for (int i=1; i<[data count]; i++) 
     {
